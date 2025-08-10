@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bird Netting Services — Safe, Clean, Local</title>
+<meta name="description" content="Professional bird netting installation in Pune — balconies, terraces, ducts & industrial spaces. Free quote, warranty, safe humane solutions." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7fbff;--card:#fff;--muted:#6b7280;--accent:#0a84ff;--accent-2:#00c2ff;--cta:#007aff}
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);margin:0;color:#071022}
+  .wrap{max-width:1100px;margin:28px auto;padding:20px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+  nav{display:flex;gap:12px}
+  nav a{color:inherit;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+  nav a.cta{background:var(--cta);color:white}
+
+  .header-actions{display:flex;gap:8px;align-items:center}
+  .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;margin-top:20px;align-items:start}
+  .heroCard{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+  h1{margin:0;font-size:28px}
+  p.lead{color:var(--muted);margin-top:8px}
+  .bullets{display:flex;gap:8px;margin-top:14px}
+  .pill{background:#eef8ff;padding:8px 10px;border-radius:999px;font-weight:600;color:var(--accent)}
+
+  .quoteForm{display:flex;flex-direction:column;gap:10px}
+  input[type=text], input[type=number], input[type=email], textarea{padding:10px;border-radius:10px;border:1px solid rgba(2,6,23,0.06);width:100%}
+  button.btn{background:var(--cta);color:white;border:none;padding:12px;border-radius:10px;font-weight:700;cursor:pointer}
+  button.ghost{background:transparent;border:1px solid rgba(2,6,23,0.06);padding:10px;border-radius:10px}
+
+  section{margin-top:28px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .service{background:var(--card);padding:16px;border-radius:12px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+  .faq .item{background:var(--card);padding:14px;border-radius:12px;margin-bottom:8px}
+  footer{margin-top:30px;color:var(--muted);font-size:13px}
+
+  /* calculator */
+  .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+  .calc-row{display:flex;gap:8px;align-items:center}
+  .estimate{background:#f1f9ff;padding:10px;border-radius:10px;margin-top:10px;font-weight:700}
+
+  /* responsive */
+  @media(max-width:980px){.hero{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr)}nav{display:none}}
+  @media(max-width:640px){.grid3{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.header-actions{display:none}}
+
+  /* small helpers */
+  .muted{color:var(--muted)}
+  .flex{display:flex;align-items:center;gap:8px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">BN</div>
+        <div>
+          <div style="font-weight:800">Pune Bird Netting</div>
+          <div class="muted" style="font-size:13px">Safe • Humane • Durable</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="cta">Request Quote</a>
+        </nav>
+        <!-- Admin buttons (local demo) -->
+        <button class="ghost" id="exportBtn" title="Export saved requests">Export Requests</button>
+        <button class="ghost" id="resetBtn" title="Clear saved requests">Clear Requests</button>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div>
+        <div class="heroCard">
+          <h1>Professional Bird Netting in Pune</h1>
+          <p class="lead">We protect your home and business from bird damage with invisible, UV-stable nets and tidy, certified installations. Free inspection & quick quotes in Pune.</p>
+          <div class="bullets">
+            <div class="pill">Balcony & Terrace</div>
+            <div class="pill">Industrial & Ducts</div>
+            <div class="pill">Warranty & Clean Install</div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:16px">
+            <a href="#contact" class="btn" style="text-decoration:none">Get Free Quote</a>
+            <button class="ghost" onclick="openWhatsApp()">WhatsApp Us</button>
+          </div>
+
+          <section id="services" style="margin-top:18px">
+            <h3>Our Services</h3>
+            <div class="grid3" style="margin-top:12px">
+              <div class="service">
+                <strong>Balcony & Terrace Netting</strong>
+                <div class="muted" style="font-size:13px;margin-top:6px">Invisible nets, minimal profile, pet-safe options.</div>
+              </div>
+              <div class="service">
+                <strong>Industrial & Warehouse</strong>
+                <div class="muted" style="font-size:13px;margin-top:6px">Large-area coverage, heavy-duty HDPE nets & maintenance plans.</div>
+              </div>
+              <div class="service">
+                <strong>Bird-proofing Solutions</strong>
+                <div class="muted" style="font-size:13px;margin-top:6px">Spikes, netting, duct covers and humane deterrents.</div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <section id="gallery" style="margin-top:16px">
+          <h3>Gallery</h3>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1558980394-0f51a9f71e9d?q=80&w=800&auto=format&fit=crop" alt="net1">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" alt="net2">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="net3">
+          </div>
+        </section>
+
+        <section id="faq" style="margin-top:18px">
+          <h3>FAQ</h3>
+          <div class="faq">
+            <div class="item"><strong>Will nets harm birds?</strong><div class="muted" style="margin-top:6px">No — we use mesh sizes that prevent access while allowing safe escape; installations are humane and compliant with wildlife guidelines.</div></div>
+            <div class="item"><strong>How long does installation take?</strong><div class="muted" style="margin-top:6px">Small balcony: 1–2 hours. Larger areas: 1–2 days depending on complexity.</div></div>
+            <div class="item"><strong>Do you offer warranty?</strong><div class="muted" style="margin-top:6px">Yes — 1–5 year warranty options depending on material and service tier.</div></div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="heroCard">
+          <h3 id="contact">Request Free Quote</h3>
+
+          <!-- Calculator -->
+          <div>
+            <strong>Quick Cost Calculator</strong>
+            <div class="muted" style="font-size:13px;margin-top:6px">Estimate price instantly — change rates later from settings.</div>
+            <div class="calc-grid">
+              <div>
+                <label class="muted">Width</label>
+                <input type="number" id="calcWidth" placeholder="e.g., 8" min="0" step="0.1">
+              </div>
+              <div>
+                <label class="muted">Height</label>
+                <input type="number" id="calcHeight" placeholder="e.g., 6" min="0" step="0.1">
+              </div>
+            </div>
+            <div class="calc-grid" style="margin-top:8px">
+              <div>
+                <label class="muted">Units</label>
+                <select id="calcUnit">
+                  <option value="ft">Feet</option>
+                  <option value="m">Meters</option>
+                </select>
+              </div>
+              <div>
+                <label class="muted">Net type</label>
+                <select id="calcType">
+                  <option value="standard">Standard (₹15 / sq.ft)</option>
+                  <option value="heavy">Heavy-duty (₹30 / sq.ft)</option>
+                  <option value="invisible">Invisible (Premium) (₹50 / sq.ft)</option>
+                </select>
+              </div>
+            </div>
+            <div class="estimate" id="calcResult">Area: 0 sq.ft — Estimate: ₹0</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button class="btn" id="calcEstimateBtn">Calculate</button>
+              <button class="ghost" id="calcAddBtn">Add area to Quote</button>
+            </div>
+          </div>
+
+          <hr style="margin:12px 0">
+
+          <form id="quoteForm" class="quoteForm">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email (optional)">
+            <input type="text" id="phone" placeholder="Phone or WhatsApp number" required>
+            <input type="number" id="area" placeholder="Area (sq ft) — approximate">
+            <label class="muted" style="font-size:13px">Upload photo (optional)</label>
+            <input type="file" id="photo" accept="image/*">
+            <textarea id="notes" rows="3" placeholder="Message / landmark / society name"></textarea>
+            <div style="display:flex;gap:8px">
+              <button type="button" class="btn" id="sendRequestBtn">Send Request</button>
+              <button type="button" class="ghost" id="clearFormBtn">Clear</button>
+            </div>
+            <div id="formMsg" class="muted" style="margin-top:8px;font-size:13px"></div>
+          </form>
+
+          <div style="margin-top:14px">
+            <strong>Serving Areas</strong>
+            <div class="muted" style="margin-top:6px">Pune city, Pimpri-Chinchwad, Wakad, Kothrud, Hadapsar, and surrounding suburbs.</div>
+            <div style="margin-top:12px"><iframe src="https://www.google.com/maps?q=pune&output=embed" width="100%" height="140" style="border:0;border-radius:10px"></iframe></div>
+          </div>
+        </div>
+
+        <div class="heroCard" style="margin-top:12px">
+          <strong>Why choose us</strong>
+          <ul style="margin-top:8px;color:var(--muted)">
+            <li>Local Pune team, fast visits</li>
+            <li>Neat installations — minimal drilling</li>
+            <li>Certified safety & insured crew</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div>© <strong>Pune Bird Netting</strong> — Made local in Pune</div>
+        <div class="muted">Call/WhatsApp: <a href="tel:+919000000000">+91 90000 00000</a></div>
+      </div>
+    </footer>
+  </div>
+
+<script>
+  // Wrap JS inside DOMContentLoaded to avoid null errors when elements aren't present yet
+  document.addEventListener('DOMContentLoaded', function () {
+    var FORM_KEY = 'pn_quote_requests_v1';
+    var BUSINESS_WHATSAPP = '919000000000'; // replace with your business WhatsApp number (without +)
+
+    // DOM refs (null-safe)
+    var exportBtn = document.getElementById('exportBtn');
+    var resetBtn = document.getElementById('resetBtn');
+    var calcEstimateBtn = document.getElementById('calcEstimateBtn');
+    var calcAddBtn = document.getElementById('calcAddBtn');
+    var calcWidth = document.getElementById('calcWidth');
+    var calcHeight = document.getElementById('calcHeight');
+    var calcUnit = document.getElementById('calcUnit');
+    var calcType = document.getElementById('calcType');
+    var calcResult = document.getElementById('calcResult');
+    var sendRequestBtn = document.getElementById('sendRequestBtn');
+    var clearFormBtn = document.getElementById('clearFormBtn');
+
+    // form refs
+    var nameInput = document.getElementById('name');
+    var emailInput = document.getElementById('email');
+    var phoneInput = document.getElementById('phone');
+    var areaInput = document.getElementById('area');
+    var notesInput = document.getElementById('notes');
+    var photoInput = document.getElementById('photo');
+    var formMsg = document.getElementById('formMsg');
+
+    // safe bind helpers
+    if (exportBtn) { exportBtn.addEventListener('click', exportRequests); }
+    if (resetBtn) { resetBtn.addEventListener('click', function () { if (confirm('Clear saved requests?')) { localStorage.removeItem(FORM_KEY); alert('Cleared'); } }); }
+
+    if (calcEstimateBtn) { calcEstimateBtn.addEventListener('click', calculateEstimate); }
+    if (calcAddBtn) { calcAddBtn.addEventListener('click', addEstimateToForm); }
+    if (sendRequestBtn) { sendRequestBtn.addEventListener('click', submitQuote); }
+    if (clearFormBtn) { clearFormBtn.addEventListener('click', resetForm); }
+
+    // Calculator logic
+    var RATES = { standard: 15, heavy: 30, invisible: 50 }; // ₹ per sqft
+    var MIN_CHARGE = 500;
+
+    function numberOnlyDigits(s) {
+      if (!s) return '';
+      var out = [];
+      for (var i = 0; i < s.length; i++) {
+        var c = s.charAt(i);
+        if ('0123456789'.indexOf(c) !== -1) out.push(c);
+      }
+      return out.join('');
+    }
+
+    function calculateEstimate() {
+      var w = parseFloat(calcWidth && calcWidth.value) || 0;
+      var h = parseFloat(calcHeight && calcHeight.value) || 0;
+      if (w <= 0 || h <= 0) { calcResult.textContent = 'Enter width & height to calculate.'; return null; }
+      var unit = (calcUnit && calcUnit.value) || 'ft';
+      var wFt = unit === 'm' ? w * 3.28084 : w;
+      var hFt = unit === 'm' ? h * 3.28084 : h;
+      var area = Math.max(0.1, +(wFt * hFt).toFixed(2));
+      var rate = RATES[(calcType && calcType.value) || 'standard'];
+      var price = Math.max(MIN_CHARGE, Math.round(area * rate));
+      calcResult.textContent = 'Area: ' + area + ' sq.ft — Estimate: ₹' + price.toLocaleString();
+      return { area: area, price: price };
+    }
+
+    function addEstimateToForm() {
+      var r = calculateEstimate();
+      if (!r) return;
+      if (areaInput) areaInput.value = r.area;
+      if (formMsg) formMsg.textContent = 'Added area ' + r.area + ' sq.ft to form (estimate ₹' + r.price + ').';
+    }
+
+    // Submit quote: save locally and open WhatsApp to business number
+    function submitQuote() {
+      if (formMsg) formMsg.textContent = '';
+      var name = (nameInput && nameInput.value || '').trim();
+      var phoneRaw = (phoneInput && phoneInput.value || '').trim();
+      var phone = numberOnlyDigits(phoneRaw);
+      if (!name || !phone) { if (formMsg) formMsg.textContent = 'Please enter name and phone.'; return; }
+      var email = (emailInput && emailInput.value || '').trim();
+      var area = (areaInput && areaInput.value || '').trim();
+      var notes = (notesInput && notesInput.value || '').trim();
+
+      function readerAndSave(photoDataUrl) {
+        try {
+          var reqs = JSON.parse(localStorage.getItem(FORM_KEY) || '[]');
+          var obj = { id: Date.now(), name: name, phone: phone, email: email, area: area, notes: notes, photo: photoDataUrl, created: new Date().toISOString() };
+          reqs.push(obj); localStorage.setItem(FORM_KEY, JSON.stringify(reqs));
+          if (formMsg) formMsg.textContent = 'Request saved. Opening WhatsApp to send details...';
+
+          var msg = encodeURIComponent('Hello, I am ' + name + '. I need a bird net quote. Area: ' + (area || 'N/A') + '. Notes: ' + (notes || 'N/A') + '. Contact: ' + phone + '. Email: ' + (email || 'N/A'));
+          var waLink = 'https://wa.me/' + BUSINESS_WHATSAPP + '?text=' + msg;
+          window.open(waLink, '_blank');
+          resetFormInputs();
+        } catch (err) { console.error(err); if (formMsg) formMsg.textContent = 'Failed to save request.'; }
+      }
+
+      if (photoInput && photoInput.files && photoInput.files[0]) {
+        var fr = new FileReader();
+        fr.onload = function () { readerAndSave(fr.result); };
+        fr.onerror = function () { readerAndSave(null); };
+        fr.readAsDataURL(photoInput.files[0]);
+      } else {
+        readerAndSave(null);
+      }
+    }
+
+    function resetForm() { if (formMsg) formMsg.textContent = ''; resetFormInputs(); }
+    function resetFormInputs() { var form = document.getElementById('quoteForm'); if (form) form.reset(); }
+
+    function openWhatsApp() { var business = BUSINESS_WHATSAPP; window.open('https://wa.me/' + business + '?text=' + encodeURIComponent('Hello, I need a bird netting quote in Pune.'), '_blank'); }
+
+    function exportRequests() {
+      var data = localStorage.getItem(FORM_KEY) || '[]';
+      try {
+        var blob = new Blob([data], { type: 'application/json' }); var url = URL.createObjectURL(blob);
+        var a = document.createElement('a'); a.href = url; a.download = 'requests.json'; a.click(); URL.revokeObjectURL(url);
+      } catch (err) { alert('Export failed'); }
+    }
+
+    // keyboard "Enter" on calc inputs triggers calculate
+    [calcWidth, calcHeight].forEach(function (inp) { if (inp) inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { calculateEstimate(); } }); });
+
+    // init
+    calculateEstimate();
+  });
+</script>
+</body>
+</html>
